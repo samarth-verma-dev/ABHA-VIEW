@@ -79,12 +79,9 @@ This project is a **hackathon prototype**:
 - **Storage:** External demo data  
 
 ---
-
 ## 📊 Screenshots
 
-## 📊 Screenshots
-
-## 📊 Screenshots
+End-to-end flow of consent, authentication, and secure record access across doctor and patient interfaces.
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/cdd513d4-2a90-4d62-8a9b-52389271188d" height="220"/>
