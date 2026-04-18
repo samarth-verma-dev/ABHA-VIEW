@@ -82,8 +82,33 @@ This project is a **hackathon prototype**:
 
 ## 📊 Screenshots
 
-(Add screenshots here — Doctor dashboard, patient app, consent flow)
+## 📊 Screenshots
 
+## 📊 Screenshots
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/cdd513d4-2a90-4d62-8a9b-52389271188d" height="220"/>
+  <img src="https://github.com/user-attachments/assets/22ff7e3c-65e0-4589-8f97-c96e8d5f2751" height="220"/>
+</p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/38fd10d3-b80f-45b3-b04b-e188add6d76c" height="220"/>
+  <img src="https://github.com/user-attachments/assets/5a09b6cb-03b4-4d20-8b0e-cfc752192629" height="220"/>
+</p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/c8ef205a-9fb6-4eb5-9c40-73c4c0cf69a3" height="220"/>
+  <img src="https://github.com/user-attachments/assets/e370d3b3-ce5c-477a-8f97-0b1fa0cc7634" height="220"/>
+</p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/6e39bf83-d658-488d-805c-48ddb95ecb73" height="220"/>
+  <img src="https://github.com/user-attachments/assets/aff93016-45d2-47ec-992e-cdaf22fac163" height="220"/>
+</p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/275d886c-a3d5-4173-98fe-89cf8673017b" height="220"/>
+</p>
 ---
 
 ## 🚧 Limitations
