@@ -1,127 +1,101 @@
-# ABHA-View
+# ABHA-VIEW — Consent-Based Medical Record System
 
-ABHA-View is a **consent-driven medical record viewing prototype** that demonstrates how doctors can securely access a patient’s ABHA-linked medical history **only during a consultation**, with full patient awareness, control, and transparency.
+A privacy-first medical record system aligned with the ABHA (Ayushman Bharat Health Account) framework, enabling secure, consent-driven access to patient data during clinical consultations.
 
-> ⚠️ This is a **hackathon prototype**.  
-> It is **not publicly deployed** and does **not integrate with live ABHA or government systems**.
-
----
-
-## 🧩 Problem Statement
-
-Healthcare data in India is fragmented across multiple hospitals and laboratories.  
-During consultations, doctors often do not have access to a patient’s complete medical history, which can result in:
-
-- Incomplete or inaccurate diagnosis  
-- Over-reliance on patient memory  
-- Repeated tests and delayed treatment  
-- Informal and insecure sharing of medical records  
-
-At the same time, patients lack visibility into **who accesses their medical data and when**.
+Built with Next.js, React Native, and Firebase.
 
 ---
 
-## 💡 Solution Overview
+## 🎥 Demo
 
-ABHA-View demonstrates a system where:
+[![Watch Demo](https://img.youtube.com/vi/q-APBoRfwww/0.jpg)](https://www.youtube.com/watch?v=q-APBoRfwww)
 
-- Doctors request access to records using a patient’s ABHA ID  
+A complete end-to-end walkthrough demonstrating secure, consent-based access to medical records.
+
+---
+
+## 🚀 Key Features
+
+- 🔐 Consent-based access control for medical records  
+- ⏱️ Session-based visibility (auto-expiry after consultation)  
+- 👁️ Patient audit logs for full transparency  
+- 📱 Cross-platform system (Doctor web + Patient mobile app)  
+- 🔑 Secure authentication using Firebase (demo implementation)  
+
+---
+
+## 💡 Problem
+
+Healthcare data in India is fragmented across multiple providers.
+
+This leads to:
+- Incomplete diagnosis due to missing history  
+- Repeated tests and delays  
+- Reliance on patient memory  
+- Lack of visibility into who accesses medical data  
+
+---
+
+## 💡 Solution
+
+ABHA-VIEW demonstrates a system where:
+
+- Doctors request access using a patient’s ABHA ID  
 - Patients grant consent from their own device  
-- Medical records are visible **only for the duration of the consultation**  
+- Records are visible **only during an active consultation**  
 - Access automatically expires after the session  
-- Patients can view an **audit log** of all ABHA access events  
+- Patients can track all access via audit logs  
 
-The platform acts purely as a **secure viewing layer**, not a permanent data store.
-
----
-
-## 🔐 Authentication & Security Design
-
-### Original Design (Intended System)
-The original system design includes:
-- ABHA ID for patient identification  
-- **Device-level biometric authentication**
-- One-Time Password (OTP) for explicit consent  
-
-### Prototype Implementation
-Due to platform and regulatory constraints:
-- OTP-based consent is implemented for the demo  
-- **Biometric authentication remains part of the original design**, but is out of scope for the prototype  
-- No attempt is made to recreate or replace official ABHA workflows  
+The system acts as a **secure viewing layer**, not a permanent data store.
 
 ---
 
-## ⏱️ Session Control & Access Lifecycle
+## 🔐 Security & Access Design
 
-- Each consultation runs inside a **temporary session**
-- Sessions automatically expire after a predefined timeout
-- **Both doctor and patient** can manually end the session at any time
-- Once a session ends:
-  - Medical records are no longer accessible
-  - Access is immediately revoked
-  - The session is marked as completed
-- All access events are logged and visible to the patient
-
-This design follows the **principle of least privilege**, minimizing unnecessary exposure of sensitive data.
+- Session-based access lifecycle  
+- Automatic expiry after consultation  
+- Manual termination by doctor or patient  
+- Audit logging of all access events  
+- Principle of least privilege enforced  
 
 ---
 
-## 👁️ Patient Transparency (Access History)
+## 🧪 Prototype Scope
 
-Patients can view a read-only **ABHA Access History**, showing:
-- Who accessed their ABHA-linked records  
-- Which hospital or clinic initiated the access  
-- Date and time of access  
-- Whether the session is active or completed  
+This project is a **hackathon prototype**:
 
-Only consented access events are shown.
-
----
-
-## 🧪 Demo Scope & Assumptions
-
-For this hackathon prototype, we assume:
-- Hospitals link records to ABHA IDs (partial data availability)
-- Live ABHA verification APIs are not publicly accessible
-- Medical records are demo data (PDFs / images)
-- The system is demonstrated via a **recorded walkthrough video**, not live deployment
+- No live ABHA or government API integration  
+- Medical records are demo data  
+- OTP-based consent used instead of biometrics  
+- Demonstrated via recorded walkthrough (no live deployment)  
 
 ---
 
-## 🛠️ Tech Stack
+## 🏗️ Architecture
 
-- **Doctor Portal**: Next.js  
-- **Patient App**: React Native / Expo  
-- **Authentication**: Firebase Auth (demo-only)  
-- **Database**: Firebase Firestore  
-- **Storage (Demo)**: External file links  
-- **Hosting**: Not deployed (video demo only)
+- **Doctor Portal:** Next.js  
+- **Patient App:** React Native (Expo)  
+- **Backend:** Firebase (Auth, Firestore)  
+- **Storage:** External demo data  
 
 ---
 
-## 📽️ Demo Video
+## 📊 Screenshots
 
-A complete end-to-end walkthrough of the working prototype is provided as a **screen-recorded video** for hackathon evaluation.
-
----
-
-## 📊 Presentation
-
-The project presentation is available in the `ppt/` folder.
+(Add screenshots here — Doctor dashboard, patient app, consent flow)
 
 ---
 
 ## 🚧 Limitations
 
-- No live ABHA or government system integration  
-- No biometric implementation in the prototype  
-- Demo-only medical records  
+- No real ABHA integration  
+- No biometric authentication (planned)  
+- Demo-only data  
 - Not production-ready  
 
 ---
 
 ## 👥 Team
 
-**Team Name:** SAU_WALE  
-**Project Type:** Hackathon Prototype
-
+**Team:** SAU_WALE  
+**Type:** Hackathon Prototype
